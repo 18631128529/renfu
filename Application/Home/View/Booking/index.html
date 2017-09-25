@@ -1,0 +1,60 @@
+<layout name="Layout/main"/>
+<div class="booking-index" id="wrapper">
+    <div id="calendar">
+        <div class="header">
+            <select class="year-select">
+                <for start=":date('Y')" end=":date('Y')+2">
+                    {$i==$year?$select="selected":$select=""}
+                    <option value="{$i}" {$select}>{$i}年</option>
+                </for>
+            </select>
+            <select class="month-select">
+                <for start="1" end="13">
+                    {$i==$month?$select="selected":$select=""}
+                    <option value="{$i}" {$select}>{$i}月</option>
+                </for>
+            </select>
+        </div>
+        <div class="content">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>周一</th>
+                        <th>周二</th>
+                        <th>周三</th>
+                        <th>周四</th>
+                        <th>周五</th>
+                        <th>周六</th>
+                        <th>周日</th>
+                    </tr>
+                </thead>
+                <tbody class="date-list"></tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <button class="btn bookingBtn">预约</button>
+          <!-- <input name="" id="" value="预 约" type="button" class="open-window">  -->
+        </div>
+        <div class="booking-point">
+            <p>1. 需要提前5天预约</p>
+            <p>2. 绿色数字代表当天剩余名额</p>
+            <p>3. 灰色说明不可预约</p>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="msbModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document" style="width: 80%">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="modalMsg">12312312</p>
+            </div>
+            <div class="modal-footer" style="padding: 0;margin: 0">
+              <button type="button" data-dismiss="modal">取  消</button>
+              <button type="button" class="subBooking">确  定</button>
+            </div>
+        </div>
+    </div>
+</div>
+

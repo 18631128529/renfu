@@ -1,0 +1,63 @@
+
+
+.headbox{
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 90px;
+	line-height: 90px;
+	color: #fff;
+	text-align: center;
+}
+.patient-name{
+	font-weight: bold;
+	font-size: 25px;
+	margin-right: 10px
+}
+.index-list li{
+	background-color: #fff;
+	margin: 10px 0;
+	padding: 10px 15px
+}
+.index-list li a{
+	display: inline-block;
+	width: 100%;
+}
+.index-list li span{
+	font-size: 15px;
+	color: #555;
+	margin-left: 10px
+}
+.fa{
+	color: #b26c26;
+	font-size: 20px
+}
+.fa-angle-right{
+	float: right;
+	font-size: 23px
+}
+
+
+.patient-cpwd{
+	padding-top: 15%;
+}
+.patient-cpwd .form-item input{
+	width: 85%;
+	display: inline-block;
+}
+.patient-cpwd .form-actions,.patient-cpwd .form-item{
+	text-align: center;
+}
+.patient-cpwd .subBtn{
+	width: 85%;
+	color: #fff;
+	outline: none;
+	background-color: #e88e1a
+}
+.error-box{
+	color: #ff0000;
+	width: 85%;
+	margin: 0 auto 5% auto;
+	padding-left: 12px;
+	display: none
+}

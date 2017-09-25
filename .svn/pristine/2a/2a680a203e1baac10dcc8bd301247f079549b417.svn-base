@@ -1,0 +1,45 @@
+.page-content{
+	padding: 10%;
+}
+.nav-logo{
+	width: 65%;
+	margin: 10% auto;
+}
+.nav-logo img{
+	width: 100%;
+	height: 100%
+}
+.form-item{
+	margin: 10px 0 15px 0;
+	border-bottom: 1px solid #ccc
+}
+.form-item .text{
+	border: 0;
+	outline: none;
+	padding: 8px 12px;
+	font-size: 16px
+}
+.form-item-agree input,.form-item-agree span{
+	vertical-align: middle;
+}
+.loginbtn{
+	border: none;
+	width: 100%;
+	height: 41px;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 50px;
+	background: -webkit-linear-gradient(left, #a34906 , #e88e1a); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #a34906 , #e88e1a); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #a34906 , #e88e1a); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #a34906 , #e88e1a); /* 标准的语法（必须放在最后） */
+    margin-top: 12%;
+    outline: none
+}
+.error-box{
+	margin-bottom: 20px;
+	color: #ff0000;
+	font-size: 16px;
+	padding-left: 12px;
+	display: none
+}

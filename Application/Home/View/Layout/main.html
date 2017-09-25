@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{$title}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Commen/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Commen/font-awesome/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Commen/commen.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/style.css?r={:time()}"/>
+    <if condition="$cssfiles">
+        <volist name="cssfiles" id="v">
+            <link rel="stylesheet" type="text/css" href="__PUBLIC__/{$v}.css?r={:time()}"/>
+        </volist>
+    </if>
+</head>
+<body>
+    <div class="page-content">
+        {__CONTENT__}
+    </div>
+    <!-- 底部开始 -->
+    <ul class="foot-nav">
+        <li class="<?php if(CONTROLLER_NAME=='Message')echo 'active';?>">
+            <a href="/message/index">
+                <i class="fa fa-home"></i>
+                <span class="on">首页</span>
+            </a>
+        </li>
+        <li class="<?php if(CONTROLLER_NAME=='Booking')echo 'active';?>">
+            <a href="/booking/index">
+                <i class="fa fa-clock-o"></i>
+                <span>预约</span>
+            </a>
+        </li>
+        <li class="<?php if(CONTROLLER_NAME=='Comment')echo 'active';?>">
+            <a href="/comment/add">
+                <i class="fa fa-commenting-o"></i>
+                <span>留言</span>
+            </a>
+        </li>
+        <li class="<?php if(CONTROLLER_NAME=='Patient')echo 'active';?>">
+            <a href="/patient/index">
+                <i class="fa fa-user-o"></i>
+                <span>我的</span>
+           </a>
+        </li>
+    </ul>
+    <!-- 底部结束 -->
+    <script type="text/javascript" src="__PUBLIC__/Commen/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Commen/jquery.form.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Commen/bootstrap/bootstrap.min.js"></script>
+    <if condition="$jsfiles">
+        <volist name="jsfiles" id="v">
+            <script type="text/javascript" src="__PUBLIC__/{$v}.js?r={:time()}"></script>
+        </volist>
+    </if>
+</body>
+</html>

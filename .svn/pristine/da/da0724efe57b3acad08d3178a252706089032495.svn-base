@@ -1,0 +1,46 @@
+<layout name="Layout/main"/>
+<div class="patient-index">
+    <div class="headbox">
+        <span class="patient-name">{:session('user.realname')}</span>
+        <span class="patient-account">{:session('user.account')}</span>
+    </div>
+    <ul class="index-list">
+        <li>
+            <a href="/message/list?t=1">
+                <i class="fa fa-bell-o"></i>
+                <span>复诊通知</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+        <li>
+            <a href="/message/list?t=2">
+                <i class="fa fa-file-text-o"></i>
+                <span>随访记录</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li> 
+        <li>
+            <a href="/patient/blist">
+                <i class="fa fa-clock-o"></i>
+                <span>我的预约</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li> 
+        <li>
+            <a href="/patient/cpwd">
+                <i class="fa fa-edit"></i>
+                <span>修改密码</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li> 
+        <li>
+            <a href="/site/logout">
+                <i class="fa fa-cog"></i>
+                <span>退出</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>       
+    </ul>
+</div>
+
+

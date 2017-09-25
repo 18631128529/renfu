@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<layout name="Layout/main"/>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>充值选择</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- 显示窗口 宽度 是 客户端的 屏幕 宽度 （就是 满屏 ！），显示的文字和图形的初始比例 是 1.0 -->
+    <link rel="stylesheet" type="text/css" href="/Public/home/css/style1.css">
+</head>
+<body>
+  <div class="money">
+    <p>选择金额</p >
+    <input type="button" name="" id="bt1"  onclick="return sure(1)" value="5元/5次">
+    <input type="button" name="" id="bt2"  onclick="return sure(2)" value="10元/10次">
+    <div style="padding: 20px 0 0px;;width: 40%;">
+      <img src="/Public/home/images/wcpay.png" style="width: 100%;">
+    </div>
+  </div>
+  <div class="goumai">
+    <input type="button" value="立即购买">
+  </div>
+  <script type="text/javascript">
+      function sure (key) {
+      var bt1 = document.getElementById('bt1');
+      var bt2 = document.getElementById('bt2');
+      if(key==1){
+      bt1.style.backgroundColor="#ffe4c2";
+      }else if(key==2){
+      bt2.style.backgroundColor="#ffe4c2";
+      }
+    }
+</script>
+</body>
+</html>

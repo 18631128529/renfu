@@ -1,0 +1,64 @@
+.bookingBtn{
+	background-color: #e88e1a;
+	color: #fff;
+	margin: 10% 5% 0 5%;
+	width: 90%
+}
+.booking-point{
+	color: #888;
+	padding: 5%
+}
+.booking-index .header{
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background-color: #e88e1a;
+}
+.booking-index .header select{
+	height: 28px;
+	width: 30%;
+	border: 0;
+	padding-left: 10px
+}
+.content{
+	background-color:#fff
+}
+.content th{
+	border-bottom-width: 1px !important;
+	text-align: center;
+}
+.content td{
+	position: relative;
+}
+.content td div{
+	text-align: center;
+}
+.content td div p{
+	position: absolute;bottom: 0;right: 0;color: green;font-size: 12px
+}
+.day-selected{
+	background-color: #e88e1a !important;
+	color: #fff
+}
+#msbModal{
+	border-radius: 2px;margin-top: 40%
+}
+.modal-footer{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.modalMsg{text-align: center;font-size: 15px}
+.modal-footer button{
+	width: 49.2%;
+	border: none;
+	background-color: #fff;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	outline: none
+}
+.subBooking{
+	border-left: 1px solid #ddd !important;
+	color: #e88e1a !important;
+}

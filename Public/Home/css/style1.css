@@ -1,0 +1,491 @@
+@charset "UTF-8";
+/**CSS Reset**/
+body, div, span, h1, h2, h3, h4, h5, h6, header, footer, section, article, aside, details, figcaption, figure, hgroup, nav, menu, address, time, canvas, audio, video, p, pre, sup, sub, ul, ol, li, dl, dt, dd, form, input, button, textarea, select, iframe, img, a { padding: 0; margin: 0;  }
+header, footer, section, article, aside, details, figcaption, figure, hgroup, nav, menu { display: block; }
+*{
+    margin: 0;
+    padding:0;
+}
+body {
+    margin: 0 auto !important;
+    min-width: 320px;
+    max-width: 480px;
+    background-color: #F5F5F5;
+    font-family:"Microsoft YaHei","微软雅黑";
+    font-size: 12px;
+    width: 100%;
+    position: relative;
+}
+
+.layui-input{
+	height: 80px;
+	opacity: 0.5;
+}
+.toplogobox{
+	margin: 20% 0px;
+}
+.logobox{
+	margin: 0px auto;
+	width: 60%;
+}
+.logobox img{
+	width: 100%;
+}
+.login-bg{
+		padding: 0px 10%;
+		background: url(../cssimg/bg.png)no-repeat -83px -62px;
+		padding-bottom: 160px;
+
+}
+.loginbtn{
+	border: none;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 20px;
+	color: #fff;
+	border-radius: 50px;
+	display: inline-block;
+	text-align: center;
+	background: -webkit-linear-gradient(left, #a34906 , #e88e1a); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #a34906 , #e88e1a); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #a34906 , #e88e1a); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #a34906 , #e88e1a); /* 标准的语法（必须放在最后） */
+    margin-top: 15%;
+}
+.loginbtn:hover{
+	color: #fff;
+}
+.loginbtnbox{
+	margin: 0px auto;
+}
+.loginbox-ZH{
+	height: 50px;
+	border-bottom: 1px solid #c9c9c9;
+	font-size: 16px;
+}
+.wty{
+	color: #9e9e9d;
+	height: 50px;
+	line-height: 50px;
+	font-size: 13px;
+}
+.wty a{
+ 	color: #ec921b;
+ }
+ /*底部菜单栏*/
+.tab-nav {
+    min-width: 320px;
+    max-width: 480px;
+    background: #fff;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: auto;
+    z-index: 1000;
+    padding: 5px 0px 5px;
+}
+.tab-nav a{
+    color: #a1a1a1!important;	
+}
+.tab-nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-weight: 100;
+}
+.iconbox{
+	height: 30px;
+}
+.iconbox img{
+	height: 100%;
+}
+.on{
+	color:#b26c26;
+}
+
+.doctortitle {
+	text-align: center;
+	background-color: #d37712;
+	color: #fff;
+	font-size:18px;
+	line-height:40px;
+	margin-bottom: 5px;
+}
+.follow-up{
+	background: #fff;
+	padding:10px 5%;
+	width: 90%;
+	height: 90px;
+	position: relative;
+	color: #515151;
+}
+.follow-upimg{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+.follow-upimg img{
+	width: 100%;
+}
+.follow-upimg span{
+	text-align: center;
+	display: inline-block;
+	font-size: 15px;
+    font-weight: 500;
+}
+.follow-uptz{
+	width:78%;
+	float: left;
+	padding: 15px 0px 10px 2%;
+	color: #515151;
+}
+.follow-uptz p{
+	width: 100%;
+	font-size: 14px;
+}
+.follow-uptz span{
+	color: #dedede;
+	position: absolute;
+	bottom: 10px;
+	right:5%;
+}
+.follow-uptz-m{
+	float: left;
+	padding: 15px 0px 10px 2%;
+	color: #515151;
+}
+.follow-uptz-m p{
+	width: 100%;
+	font-size: 14px;
+}
+.follow-uptz-m span{
+	color: #dedede;
+	position: absolute;
+	bottom: 10px;
+	right:5%;
+}
+.follow-uptz h5{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
+}
+.follow-uptz b{
+	color: #35A9FF;
+	font-weight: 500;
+}
+.follow-uptz strong{
+	color: #1AA194;
+	font-weight: 500;
+}
+.m-divider, divider {
+    width: 100%;
+    height: 10px;
+    background-color: #f5f5f5 !important;
+    display: block;
+}
+.headbox{
+	background-image: url(../cssimg/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	height: 120px;
+	padding: 15px 5% 0;
+	position: relative;
+}
+.headbox-main img{
+	width: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+}
+.headbox-main p{
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	top: 70%;
+	font-weight: 500;
+}
+.headbox-main a{
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right:5%;
+	color: #ffaa3d;
+	background: #8d430b;
+	border-radius: 50px;
+	padding: 0.2rem 0.8rem;
+	opacity: 0.4;
+	font-size: 14px;
+}
+/*我的*/
+.myselfinformation {
+    font-family: "PingFangSC-Regular","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,"Microsoft YaHei","微软雅黑",sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+}
+.myselfinformation a{
+	display:block;
+	height: 50px;
+	background: #FFF;
+	padding: 0px 5%;
+}
+.myselfinformation img{
+	width: 25px;
+}
+.myselfinformation b{
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 500;
+	padding-left: 10px;
+}
+.myselfinformation i{
+	line-height: 50px;
+	font-size:20px;
+	color: #bbbaba;
+	position: absolute;
+	right: 5%;
+	font-weight: 400
+}
+.feedback {
+	height: 150px;
+
+}
+.pptc {
+    height: 80px;
+    background-color: #fff;
+    padding: 10px 0px 15px 15px;
+    position: relative;
+}
+.addhao {
+    width: 80px;
+    height: 80px;
+    background: url(../cssimg/add.png);
+}
+.popc input {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+}
+/*我的信息*/
+.topnav{
+	height: 50px;
+	background: #fff;
+}
+.topnav ul li{
+	width: 49.5%;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	border-right:2px solid #F5F5F5;
+	font-size: 16px;
+}
+.avtive{
+	border-bottom: 2px solid #e88e1a;
+	color: #e88e1a;
+	display: inline-block;
+	width: 65px;
+}
+.zii {
+	display: inline-block;
+	font-size: 16px;
+	color: #d6d6d6;
+	position: absolute;
+	right: 15%;
+	top: 50%;
+	margin-top: -8px;
+}
+.feedback textarea {
+    width: 90%;
+    height: 90%;
+    border: none;
+    font-size: 16px;
+    color: #b2b2b2;
+    padding:8px 5%;
+}
+.didi{
+	padding: 60px 5% 20px;
+
+}
+.didi input {
+    font-size: 16px;
+    text-align: center;
+    background-color: #e88e1a;
+    border: 1px solid #e88e1a;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 40px;
+    width: 100%;
+}
+.didid{
+	padding: 50% 5% 20px;
+
+}
+.didid input {
+	width: 100%;
+    font-size: 16px;
+    text-align: center;
+    background-color: #e88e1a;
+    border: 1px solid #e88e1a;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 20px;
+}
+.leave-word{
+	padding:0px 5%;
+}
+.leave-word p{
+	display: inline-block;
+	float: left;
+	color: #404040;
+}
+.leave-word span{
+		color: #e88e1a;
+}
+.leave-word a{
+	float: right;
+	color: #e88e1a;
+	border: 1px solid #e88e1a;
+	border-radius: 50px;
+	padding: 3px 10px;
+}
+.record {
+	background: #fff;
+	padding: 15px 5%;
+}
+.need{
+	color: #f5f5f5;
+}
+.question img{
+	width: 25px;
+}
+.question p{
+	display: inline;
+	color: #787777;
+	font-size: 15px;
+	line-height: 25px;
+}
+.question span{
+	display: inline-block;
+	float: right;
+	color: #d1d1d1;
+	line-height: 30px
+}
+.answer img{
+	width: 25px;
+}
+.answer p{
+	display: inline;
+	color: #787777;
+	font-size: 15px;
+	line-height: 25px;
+}
+.answer span{
+	display: block;
+	color: #d1d1d1;
+	line-height: 30px;
+	text-align:right;
+}
+  /*预约*/
+.yuyuebox{
+  padding:20px 5%;
+}
+.yuyuebox-p{
+  color: #757575 !important;
+  font-size: 14px;
+  line-height: 24px;
+}
+.appointment-success{
+	padding: 30px 8%;
+}
+.appointment-success p{
+	color: #515151;
+	line-height: 28px;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+.wanc{
+	background:#dedede; 
+	border-radius: 50px;
+	border: 1px solid #dedede;
+	color: #fff !important;
+	padding: 2px 15px;
+	position: absolute;
+	top: 15px;
+	right: 5%;
+}
+.new{
+	background:#E54534; 
+	border-radius: 50px;
+	border: 1px solid #E54534;
+	color: #fff !important;
+	padding: 2px 5px;
+	position: absolute;
+	top: 15px;
+	right: 5%;
+}
+.topic{
+	height: 40px;
+	background-color:#fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	color: #515151;
+}
+.topic p{
+	font-weight: 600;
+}
+.topicp{
+	padding:10px 5%;
+	color: #515151;
+}
+.topicp p{
+	font-size: 16px;
+}
+.r-input-block{
+	display: block;
+	margin-top: 20px;
+}
+/*充值*/
+.money {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 5%;
+}
+.money p {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    color: #261C19;
+    padding-bottom: 20px;
+}
+.money input {
+	font-size: 14px;
+    width: 40%;
+    height: 65px;
+    line-height: 30px;
+    background-color: #fff;
+    border: 1px solid #e88e1a;
+	margin-right:8%;
+	color: #e88e1a;
+	border-radius: 5px;
+}
+.goumai {
+    margin: 5% auto;
+    text-align: center;
+    padding: 8px 5%;
+}
+.goumai input {
+    background-color: #e88e1a;;
+    border: 1px solid #e88e1a;;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 15%;
+    margin: 5% 0;
+    border-radius: 5px;
+    width: 100%;
+}

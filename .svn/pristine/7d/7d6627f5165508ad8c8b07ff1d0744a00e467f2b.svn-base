@@ -1,0 +1,23 @@
+<?php
+namespace Home\Controller;
+class CommentController extends BaseController {
+    public function index(){
+    	$title = '留言';
+    	$cssfiles = ['Home/css/message-index'];
+    	$jsfiles = ['Commen/iscroll/iscroll-probe', 'Home/js/message-index'];
+    	$this->setTcj($title, $cssfiles, $jsfiles);
+    	// echo 1;
+    	// exit;
+       	$this->display();
+    }
+
+    public function add(){
+    	$title = '留言';
+    	$cssfiles = ['Home/css/message-index'];
+    	$jsfiles = ['Commen/iscroll/iscroll-probe', 'Home/js/message-index'];
+    	$this->setTcj($title, $cssfiles, $jsfiles);
+    	// echo 1;
+    	// exit;
+       	$this->display();
+    }
+}

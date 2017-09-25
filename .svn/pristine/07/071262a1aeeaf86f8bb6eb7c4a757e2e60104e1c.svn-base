@@ -1,0 +1,18 @@
+[ 2017-09-14T19:23:30+08:00 ] 127.0.0.1 /booking/index?y=2017&m=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002016s ]
+ERR: 无法加载模块:10
+
+[ 2017-09-14T19:23:57+08:00 ] 127.0.0.1 /booking/index?y=2017&m=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+ERR: 无法加载模块:10
+
+[ 2017-09-14T19:23:58+08:00 ] 127.0.0.1 /booking/index?y=2017&m=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+ERR: 无法加载模块:10
+

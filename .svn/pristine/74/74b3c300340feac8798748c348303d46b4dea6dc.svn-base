@@ -1,0 +1,15 @@
+<layout name="Layout/main"/>
+<div class="patient-cpwd">
+    <form class="cpwd-form">
+        <div class="form-item" style="margin-bottom: 8%">
+            <input name="oldpwd" placeholder="请输入原密码" class="form-control" type="password">
+        </div>
+        <div class="form-item" style="margin-bottom: 10%">
+            <input name="newpwd" placeholder="请输入新密码" class="form-control" type="password">
+        </div>
+        <div class="error-box"></div>
+        <div class="form-actions">
+            <input value="提 交" type="submit" class="btn subBtn"> 
+        </div>
+    </form>
+</div>

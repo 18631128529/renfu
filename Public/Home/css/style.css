@@ -1,0 +1,28 @@
+body{
+	background-color: #f5f5f5
+}
+.foot-nav{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 100;
+	background: #fff;
+	padding: 8px 0
+}
+
+.foot-nav li{
+	float: left;
+	width: 25%;
+}
+.foot-nav li i,.foot-nav li span{
+	text-align: center;
+	display: block;
+	font-size: 26px;
+	color: #aaa
+}
+.foot-nav li span{
+	font-size: 18px;
+}
+.foot-nav .active i,.foot-nav .active span{
+	color: #b26c26
+}

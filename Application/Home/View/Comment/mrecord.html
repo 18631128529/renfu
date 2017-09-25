@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<layout name="Layout/main"/>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>留言记录</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <!-- 显示窗口 宽度 是 客户端的 屏幕 宽度 （就是 满屏 ！），显示的文字和图形的初始比例 是 1.0 -->
+  <link rel="stylesheet" type="text/css" href="/public/home/css/style.css"><!-- 基本样式 -->
+	<link rel="stylesheet" href="/public/home/css/layui.css"  media="all">
+  <script type="text/javascript" src="/public/home/js/jquery.min.js"></script><!-- jquery -->
+</head>
+<body>
+	<div class="topnav">
+		<ul>
+			<li><a href="/comment/add" >留言</a></li>
+			<li style="border: none;"><a href="" class="avtive">留言记录</a></li>
+		</ul>
+	</div>
+  <div style="margin-bottom: 70px;">
+    <divider><div class="m-divider"></div></divider><!-- 分割线 -->
+    <div class="record ">
+
+    <foreach name="message" item="m" >
+          <div class="question">
+            <img src="/public/home/images/wen.png">
+            <p>{$m.detail}</p>
+            <img src="{$m.imgs_thumb}">
+            <span>{$m.ctime|date='Y-m-d H:i:s',###}</span>
+          </div> 
+
+        <if condition="$m.comment neq NULL">
+          <div class="answer">
+          <img src="/public/home/images/da.png">
+            <p>{$m.comment}</p>
+          </div>
+
+          <hr class="need">
+        <else />
+          <div></div>
+        </if>
+    </foreach>
+       <hr class="need">
+    </div>
+    <divider><div class="m-divider"></div></divider>
+    <hr class="need"><!-- 分割线 -->
+    <!--<div class="record ">-->
+        <!--<div class="question">-->
+          <!--<img src="/public/home/images/wen.png">-->
+          <!--<p>头疼怎么治？什么办法更好？</p>-->
+          <!--<span>2017-05-25  08:10</span>-->
+        <!--</div>-->
+        <!--<hr class="need">-->
+        <!--<div class="answer">-->
+          <!--<img src="/public/home/images/da.png">-->
+          <!--<p>头疼注意睡眠质量多喝水不要熬夜，休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴....</p>-->
+          <!--<span>2017-05-25  08:10</span>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<divider><div class="m-divider"></div></divider>&lt;!&ndash; 分割线 &ndash;&gt;-->
+    <!--<div class="record ">-->
+        <!--<div class="question">-->
+          <!--<img src="/public/home/images/wen.png">-->
+          <!--<p>头疼怎么治？什么办法更好？</p>-->
+          <!--<span>2017-05-25  08:10</span>-->
+        <!--</div>-->
+        <!--<hr class="need">-->
+        <!--<div class="answer">-->
+          <!--<img src="/public/home/images/da.png">-->
+          <!--<p>头疼注意睡眠质量多喝水不要熬夜，休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴休息很重要，可以按摩太阳穴....</p>-->
+          <!--<span>2017-05-25  08:10</span>-->
+        <!--</div>-->
+    <!--</div>-->
+  </div>   
+	<!-- 底部开始 -->
+
+  <!-- 底部结束 -->
+</body>
+</html>
